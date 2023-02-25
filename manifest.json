@@ -1,0 +1,22 @@
+{
+    "name": "LinkedIn Connectomatic",
+    "version": "2.0",
+    "description": "Automatically send connection requests to people in a LinkedIn search",
+    "manifest_version": 3,
+    "icons": {
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.linkedin.com/search/results/people/?*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
